@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 350" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Procesador y disipador: balance térmico</title>
+  <desc id="descripcion">Procesador a {{TC}} grados Celsius y disipador a {{TD}} grados Celsius. Las flechas indican la dirección del flujo de calor.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f7f8"/><stop offset=".4" stop-color="#d8dfe3"/><stop offset=".7" stop-color="#f3f5f6"/><stop offset="1" stop-color="#aab7bf"/></linearGradient>
+    <linearGradient id="canto" x1="0" x2="1"><stop stop-color="#7f919c"/><stop offset=".5" stop-color="#cad3d8"/><stop offset="1" stop-color="#8c9da7"/></linearGradient>
+    <linearGradient id="aluminio" x1="0" x2="1"><stop stop-color="#d9e0e4"/><stop offset=".45" stop-color="#f0f3f5"/><stop offset="1" stop-color="#9bacb7"/></linearGradient>
+    <linearGradient id="cobre" x1="0" x2="1"><stop stop-color="#8f6246"/><stop offset=".35" stop-color="#cea27d"/><stop offset=".7" stop-color="#bb8964"/><stop offset="1" stop-color="#8b614b"/></linearGradient>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#205847"/></marker>
+  </defs>
+  <g font-family="Arial, sans-serif" fill="#17304f">
+    <text x="280" y="36" text-anchor="middle" font-size="15" font-weight="bold">PROCESADOR</text>
+    <text x="675" y="36" text-anchor="middle" font-size="15" font-weight="bold">DISIPADOR</text>
+    <ellipse cx="287" cy="199" rx="105" ry="11" fill="#17304f" opacity=".065"/>
+    <ellipse cx="680" cy="239" rx="108" ry="10" fill="#17304f" opacity=".065"/>
+    <!-- Sustrato del procesador y encapsulado metálico. -->
+    <path d="M178 128 L278 178 L390 123 L390 134 L278 189 L178 139Z" fill="#173e32" stroke="#214737" stroke-width="1"/>
+    <path d="M178 128 L290 77 L390 123 L278 178Z" fill="#39705a" stroke="#28503e" stroke-width="1.2"/>
+    <path d="M185 128 L290 83 L383 123 M185 133 L278 180 L383 128" fill="none" stroke="#8fa48b" stroke-width="1"/>
+    <path d="M197 127 L220 137 L220 144 L246 156 M300 169 L315 161 L315 153 L372 128" fill="none" stroke="#b2b18a" stroke-width="1.2" opacity=".8"/>
+    <g fill="#c5b284" stroke="#6b704f" stroke-width=".5">
+      <path d="M193 141 l9 4 v4 l-9 -4Z"/><path d="M207 148 l9 4 v4 l-9 -4Z"/><path d="M221 155 l9 4 v4 l-9 -4Z"/>
+      <path d="M324 159 l10 -5 v4 l-10 5Z"/><path d="M339 151 l10 -5 v4 l-10 5Z"/><path d="M354 144 l10 -5 v4 l-10 5Z"/>
+    </g>
+    <path d="M200 120 L280 157 L370 122 L370 134 L280 169 L200 132Z" fill="url(#canto)" stroke="#7f919c" stroke-width="1"/>
+    <path d="M200 120 L289 88 L370 122 L280 157Z" fill="url(#metal)" stroke="#a9b6bd" stroke-width="1.2"/>
+    <path d="M207 120 L289 93 L362 122 L280 152Z" fill="none" stroke="#f8fafb" stroke-width="1.2"/>
+    <path d="M208 124 L279 156 L362 126" fill="none" stroke="#b5c1c8" stroke-width=".75"/>
+    <text x="281" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#75858f" transform="rotate(20 281 130)">CPU</text>
+    <!-- Base conductora y aletas de aluminio. -->
+    <path d="M580 201 L714 201 L782 228 L646 228Z" fill="url(#cobre)" stroke="#966f52" stroke-width="1"/>
+    <path d="M646 228 L782 228 L782 237 L646 237Z" fill="#a57655" stroke="#936849" stroke-width=".8"/>
+    <path d="M580 201 L646 228 L646 237 L580 210Z" fill="#bd906c" stroke="#936849" stroke-width=".8"/>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M704 66 L760 90 L760 210 L704 186Z" fill="url(#aluminio)"/>
+      <path d="M760 90 L765 88 L765 208 L760 210Z" fill="url(#canto)"/>
+      <path d="M704 66 L709 64 L765 88 L760 90Z" fill="#f0f4f6"/>
+      <path d="M705 68 L759 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M694 66 L750 90 L750 210 L694 186Z" fill="url(#aluminio)"/>
+      <path d="M750 90 L755 88 L755 208 L750 210Z" fill="url(#canto)"/>
+      <path d="M694 66 L699 64 L755 88 L750 90Z" fill="#f0f4f6"/>
+      <path d="M695 68 L749 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M684 66 L740 90 L740 210 L684 186Z" fill="url(#aluminio)"/>
+      <path d="M740 90 L745 88 L745 208 L740 210Z" fill="url(#canto)"/>
+      <path d="M684 66 L689 64 L745 88 L740 90Z" fill="#f0f4f6"/>
+      <path d="M685 68 L739 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M674 66 L730 90 L730 210 L674 186Z" fill="url(#aluminio)"/>
+      <path d="M730 90 L735 88 L735 208 L730 210Z" fill="url(#canto)"/>
+      <path d="M674 66 L679 64 L735 88 L730 90Z" fill="#f0f4f6"/>
+      <path d="M675 68 L729 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M664 66 L720 90 L720 210 L664 186Z" fill="url(#aluminio)"/>
+      <path d="M720 90 L725 88 L725 208 L720 210Z" fill="url(#canto)"/>
+      <path d="M664 66 L669 64 L725 88 L720 90Z" fill="#f0f4f6"/>
+      <path d="M665 68 L719 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M654 66 L710 90 L710 210 L654 186Z" fill="url(#aluminio)"/>
+      <path d="M710 90 L715 88 L715 208 L710 210Z" fill="url(#canto)"/>
+      <path d="M654 66 L659 64 L715 88 L710 90Z" fill="#f0f4f6"/>
+      <path d="M655 68 L709 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M644 66 L700 90 L700 210 L644 186Z" fill="url(#aluminio)"/>
+      <path d="M700 90 L705 88 L705 208 L700 210Z" fill="url(#canto)"/>
+      <path d="M644 66 L649 64 L705 88 L700 90Z" fill="#f0f4f6"/>
+      <path d="M645 68 L699 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M634 66 L690 90 L690 210 L634 186Z" fill="url(#aluminio)"/>
+      <path d="M690 90 L695 88 L695 208 L690 210Z" fill="url(#canto)"/>
+      <path d="M634 66 L639 64 L695 88 L690 90Z" fill="#f0f4f6"/>
+      <path d="M635 68 L689 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M624 66 L680 90 L680 210 L624 186Z" fill="url(#aluminio)"/>
+      <path d="M680 90 L685 88 L685 208 L680 210Z" fill="url(#canto)"/>
+      <path d="M624 66 L629 64 L685 88 L680 90Z" fill="#f0f4f6"/>
+      <path d="M625 68 L679 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M614 66 L670 90 L670 210 L614 186Z" fill="url(#aluminio)"/>
+      <path d="M670 90 L675 88 L675 208 L670 210Z" fill="url(#canto)"/>
+      <path d="M614 66 L619 64 L675 88 L670 90Z" fill="#f0f4f6"/>
+      <path d="M615 68 L669 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M604 66 L660 90 L660 210 L604 186Z" fill="url(#aluminio)"/>
+      <path d="M660 90 L665 88 L665 208 L660 210Z" fill="url(#canto)"/>
+      <path d="M604 66 L609 64 L665 88 L660 90Z" fill="#f0f4f6"/>
+      <path d="M605 68 L659 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M594 66 L650 90 L650 210 L594 186Z" fill="url(#aluminio)"/>
+      <path d="M650 90 L655 88 L655 208 L650 210Z" fill="url(#canto)"/>
+      <path d="M594 66 L599 64 L655 88 L650 90Z" fill="#f0f4f6"/>
+      <path d="M595 68 L649 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <g stroke="#94a4ae" stroke-width=".7" stroke-linejoin="round">
+      <path d="M584 66 L640 90 L640 210 L584 186Z" fill="url(#aluminio)"/>
+      <path d="M640 90 L645 88 L645 208 L640 210Z" fill="url(#canto)"/>
+      <path d="M584 66 L589 64 L645 88 L640 90Z" fill="#f0f4f6"/>
+      <path d="M585 68 L639 91 V207" stroke="#f6f8fa" stroke-width=".8" fill="none"/>
+    </g>
+    <path d="M586 198 L645 222 L778 222" fill="none" stroke="#e0bd98" stroke-width="1.2"/>
+    <!-- Potencia y flujos calculados, en W. -->
+    <path d="{{ENTRADA}}" stroke="#205847" stroke-width="2" fill="none" marker-end="url(#flecha)"/>
+    <text x="77" y="103" text-anchor="middle" font-size="13" fill="#596c64">POTENCIA</text>
+    <text x="77" y="129" text-anchor="middle" font-size="20" font-weight="bold">{{POTENCIA}} W</text>
+    <text x="77" y="179" text-anchor="middle" font-size="14" fill="#596c64">P</text>
+    <path d="{{FLUJO_G}}" stroke="#205847" stroke-width="2" fill="none" marker-end="url(#flecha)"/>
+    <text x="477" y="103" text-anchor="middle" font-size="13" fill="#596c64">INTERCAMBIO</text>
+    <text x="477" y="129" text-anchor="middle" font-size="20" font-weight="bold">{{CALOR_G}} W</text>
+    <text x="477" y="180" text-anchor="middle" font-size="14" fill="#596c64">g |T<tspan baseline-shift="sub" font-size="10">c</tspan> − T<tspan baseline-shift="sub" font-size="10">d</tspan>|</text>
+    <path d="{{FLUJO_H}}" stroke="#205847" stroke-width="2" fill="none" marker-end="url(#flecha)"/>
+    <text x="909" y="103" text-anchor="middle" font-size="13" fill="#596c64">{{ETIQUETA_H}}</text>
+    <text x="909" y="129" text-anchor="middle" font-size="20" font-weight="bold">{{CALOR_H}} W</text>
+    <text x="909" y="180" text-anchor="middle" font-size="14" fill="#596c64">h |T<tspan baseline-shift="sub" font-size="10">d</tspan> − T<tspan baseline-shift="sub" font-size="10">a</tspan>|</text>
+    <text x="909" y="211" text-anchor="middle" font-size="14" fill="#596c64">Ambiente {{AMBIENTE}} °C</text>
+    <!-- Lecturas fuera de las piezas para mantener visible su geometría. -->
+    <path d="M187 255 H373 M582 255 H768" stroke="#d6dfdc" stroke-width="1"/>
+    <text x="280" y="287" text-anchor="middle" font-size="{{TAMANO_C}}" font-weight="bold">{{TC}} °C</text>
+    <text x="675" y="287" text-anchor="middle" font-size="{{TAMANO_D}}" font-weight="bold">{{TD}} °C</text>
+    <text x="280" y="309" text-anchor="middle" font-size="14" fill="#596c64">T<tspan baseline-shift="sub" font-size="10">c</tspan>(t)</text>
+    <text x="675" y="309" text-anchor="middle" font-size="14" fill="#596c64">T<tspan baseline-shift="sub" font-size="10">d</tspan>(t)</text>
+    <text x="520" y="341" text-anchor="middle" font-size="13" fill="#596c64">{{ESCENARIO}} · t = {{TIEMPO}} s</text>
+  </g>
+</svg>
